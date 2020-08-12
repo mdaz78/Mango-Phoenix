@@ -1,1 +1,22 @@
 $primary: purple;
+
+.small {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-link {
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        margin-right: 10px;
+    }
+
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
