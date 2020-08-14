@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :mango, Mango.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "abuzafar",
+  password: "",
   database: "mango_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
@@ -16,7 +16,7 @@ config :mango, Mango.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :mango, MangoWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 5000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
