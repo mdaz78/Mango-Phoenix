@@ -12,8 +12,12 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link</a>
+            <li class="nav-item px-2">
+                <%= link "Fruits", to: Routes.category_path(@conn, :show, "fruits") %>
+            </li>
+
+            <li class="nav-item px-2">
+                <%= link "Vegetables", to: Routes.category_path(@conn, :show, "vegetables") %>
             </li>
         </ul>
     </div>
