@@ -2,7 +2,7 @@
     <a class="navbar-brand" href="/">
         <div class="logo-link">
             <img src="/images/logo.png" class="small" />
-            <p>Mango</p>
+            <p>Sabji Wala</p>
         </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

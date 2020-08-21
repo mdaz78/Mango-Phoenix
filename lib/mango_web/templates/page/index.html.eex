@@ -1,7 +1,7 @@
 <h1 class="page-title">Seasonal Products</h1>
-<div>
+<div class="product-container">
     <%= for product <- @seasonal_products do  %>
-    <div class="col-md-4">
+    <div>
         <%= render MangoWeb.ProductView, "product_card.html", product: product %>
     </div>
     <% end %>

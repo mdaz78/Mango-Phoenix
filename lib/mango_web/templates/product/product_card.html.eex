@@ -1,13 +1,17 @@
-<div class="product thumbnail">
-    <div class="caption">
-        <span class="text-muted pull-right"><%= @product.pack_size %></span>
-        <h2>
-            <div class="product-name"><%= @product.name %></div>
-            <span class="pull-right">
-                <small class="product-price">INR <%= @product.price %></small>
-            </span>
-        </h2>
-        <hr />
-    </div>
-    <img src="<%= @product.image %>" />
+<div class="product">
+    <section class="top">
+        <div class="product-name"><%= @product.name %></div>
+        <span class="product-size"><%= @product.pack_size %></span>
+    </section>
+    <section class="image">
+        <img src="<%= @product.image %>" />
+    </section>
+    <section class="bottom">
+        <section class="product-price">&#8377;<%= @product.price %></section>
+        <section class="quantity">
+            <button class="decrease">-</button>
+            <span type="text" class="count">0</span>
+            <button class="increase">+</button>
+        </section>
+    </section>
 </div>
