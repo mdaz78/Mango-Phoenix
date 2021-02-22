@@ -37,7 +37,7 @@ defmodule MangoWeb.HomePageTest do
     product_name = find_within_element(product, :css, ".product-name") |> visible_text
     product_price = find_within_element(product, :css, ".product-price") |> visible_text
     assert product_name == "Apple"
-    assert product_price == "75"
+    assert product_price =~ "75"
 
     refute page_source() =~ "Tomato"
   end
